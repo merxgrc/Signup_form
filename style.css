@@ -20,10 +20,35 @@ header {
    
 }
 
+
 .left-side {
     background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
     width: 35%;
+    display: flex;
+    align-items: center; /* Align items to the center */
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px; /* Adjust padding for spacing */
+    background-color: rgba(19, 18, 18, 0.6); /* Semi-transparent background */
+    border-radius: 5px; /* Optional: To make it look nicer */
+}
+
+.logo-image {
+    height: 50px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between image and text */
+    mix-blend-mode: screen;
+}
+
+.logo-text {
+    color: rgb(240, 234, 234); /* Make text white */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
 }
 
 .right-side {
@@ -31,35 +56,46 @@ header {
     width: 65%;
     padding-top: 100px;
     padding-left: 20px;
+    justify-content: left;
 }
 
 .signup-form {
     display: grid;
-    grid-template-rows: 50px 50px 50px;
-    grid-template-columns: 200px 200px ;
-    gap: 50px;
+    grid-template-columns: 200px 200px;
+    gap: 10px;
+    
     
 }
 
 .signup-form p, h2{
+    grid-column: 1 / -1;
     text-align: left;
     padding-left: 10px;
+    justify-content: left;
     
 }
 
-.form {
-    
 
-}
 
 .form-group {
-    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .form-group label {
-    width: 1000px;
+    font-size:x-small;
+    text-align: left;
+}
+
+.label {
+    justify-content: left;
+
 }
 
 .form-group input {
     height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 80%;
 }
