@@ -2,34 +2,64 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     text-align: center;
-    background-color: #333; /* This sets the dark grey background color */
+    background-color: #252323; /* This sets the dark grey background color */
     margin: 0; /* It's good practice to reset default margin */
-    height: 7vh;
+    height: 100vh;
 }
 
-h1 {
-    color: blue;
+header {
+    height: 142px;
 }
 
-.main-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+.flex-container {
+    display: flex;
+    height: 682px;
 }
 
-.background-image {
+.flex-container div {
+   
+}
+
+.left-side {
     background-image: url('./images/halie-west-25xggax4bSA-unsplash.jpg');
     background-size: cover;
-    background-position: center;
-    position: absolute;
     width: 35%;
-    height: 1000%;
-    z-index: -1;
 }
 
-.form-container {
+.right-side {
     background-color: white;
     width: 65%;
-    height: 1000%;
-    margin-left: auto;
+    padding-top: 100px;
+    padding-left: 20px;
+}
+
+.signup-form {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 200px 200px ;
+    gap: 50px;
+    
+}
+
+.signup-form p, h2{
+    text-align: left;
+    padding-left: 10px;
+    
+}
+
+.form {
+    
+
+}
+
+.form-group {
+    
+}
+
+.form-group label {
+    width: 1000px;
+}
+
+.form-group input {
+    height: 20px;
 }
